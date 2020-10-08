@@ -1,4 +1,4 @@
-package com.stackhunter.util.objectiterator;
+package com.northconcepts.stackhunter.util.objectiterator;
 
 import java.util.Iterator;
 

@@ -1,4 +1,4 @@
-package com.stackhunter.example.employee;
+package com.northconcepts.stackhunter.example.employee;
 
 
 public class Employee {

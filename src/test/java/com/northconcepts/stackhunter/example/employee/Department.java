@@ -1,4 +1,4 @@
-package com.stackhunter.example.employee;
+package com.northconcepts.stackhunter.example.employee;
 
 import java.util.ArrayList;
 import java.util.Arrays;

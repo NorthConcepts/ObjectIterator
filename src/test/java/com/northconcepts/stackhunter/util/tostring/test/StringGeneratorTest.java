@@ -1,4 +1,4 @@
-package com.stackhunter.util.tostring;
+package com.northconcepts.stackhunter.util.tostring.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -13,7 +13,8 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.stackhunter.example.people.Person;
+import com.northconcepts.stackhunter.example.people.Person;
+import com.northconcepts.stackhunter.util.tostring.StringGenerator;
 
 public class StringGeneratorTest {
 
@@ -95,7 +96,7 @@ public class StringGeneratorTest {
             }
         }
         
-        String s = generateString(people, 281);
+        String s = generateString(people, 261);
         
         assertTrue("expected string length max ~" + StringGenerator.MAX_STRING_LENGTH + ", but found " + s.length(),
                 s.length() < (2 * StringGenerator.MAX_STRING_LENGTH));

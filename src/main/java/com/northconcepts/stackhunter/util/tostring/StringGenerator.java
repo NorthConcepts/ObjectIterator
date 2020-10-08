@@ -1,6 +1,6 @@
-package com.stackhunter.util.tostring;
+package com.northconcepts.stackhunter.util.tostring;
 
-import com.stackhunter.util.objectiterator.ObjectIterator;
+import com.northconcepts.stackhunter.util.objectiterator.ObjectIterator;
 
 
 public class StringGenerator {
