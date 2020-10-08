@@ -3,6 +3,7 @@ plugins {
     id 'java-library'
 }
 
+archivesBaseName='NorthConcepts-ObjectIterator'
 dependencies {
 //    api 'org.apache.commons:commons-math3:3.6.1'
 
@@ -11,4 +12,24 @@ dependencies {
 
 repositories {
     jcenter()
+}
+
+task srcZip(type: Zip) {
+    classifier = 'src'
+    from sourceSets*.allSource
+}
+
+task sourcesZip(type: Zip, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocZip(type: Zip, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesZip
+    archives javadocZip
 }
